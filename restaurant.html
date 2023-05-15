@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+</head>
+<link rel="stylesheet" href="restaurant.css">
+<body>
+    <marquee class ="res">Barbeque Restaurant , Delhi</marquee>
+    <marquee class="res1">Savour delectable cuisine in charming surroundings.</marquee> 
+    <center>
+        <marquee class="res2" direction ="down" width="500" height="100" behaviour="alternate">
+            <marquee class ="res3" behaviour ="alternate">On Diwali Eve! - You will get 20% discount</marquee>
+        </marquee>
+    </center>  
+    <section class="container">
+        <table>
+            <tr>
+                <td> 
+                    <form id="form1" >
+                        <h3>Hi Foodie! &#128519</h3>
+                        <div class="msg"></div>
+                        <div>
+                            <label for="name">Name:<br></label>
+                            <input type="text" id="name" required style="width: 40% ;"><br>
+                        </div>
+                        <div>
+                            <label for="dish">Choose Dish :<br></label> 
+                            <input type="text" id="dish" required style="width: 40% ;"><br>
+                        </div>
+                        <div><label for="price">Choose Price :<br></label> 
+                            <input type="text" id="price" required style="width: 40% ;"><br>
+                        </div>
+                        <div><label for="price">Choose Table:<br></label> 
+                            <select name="table" id="table">
+                                <!-- <option value="choose">Choose_From_An_option</option> -->
+                                <option value="Table 1"selected id="table1">Table 1</option>
+                                <option value="Table 2" id="table2">Table 2</option>
+                                <option value="Table 3" id="table3">Table 3</option>
+                                
+                            </select>
+                        </div><br>
+                        <input class="button" id="submit" type="submit" value="Submit">
+                        </form>
+                        <td>
+                            <table class="list" id="storeList">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Dishes</th>
+                                        <th>Price</th>
+                                        <th>Table_no</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+        
+                                </tbody>
+                            </table>
+                        </td> 
+            
+
+                </td>
+            </tr>
+        </table> 
+        
+         
+         
+        
+    </section>
+
+    <div id="btn"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="restaurant.js"></script>
+</body>
+
+</html> 
